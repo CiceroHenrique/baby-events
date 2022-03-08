@@ -7,6 +7,14 @@ const theme = {
     black: '#000',
     gray: '#888',
     white: '#fff',
+  },
+  breakpoints: {
+    mobile: {
+      firstWidth: "57.625rem",
+      secondWidth: "46.25rem",
+      thirdWidth: "39.125",
+      fourthWidth: "32.125",
+    }
   }
 }
 

@@ -22,43 +22,50 @@ export const Container = styled.div`
     }
   }
 
+  margin: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 
-  h1 {
-    font-size: 54px;
-    color: ${props => props.theme.colors.primary};
-    margin-top: 40px;
-  }
-
-  p {
-    margin-top: 24px;
-    font-size: 24px;
-    line-height: 32px;
-  }
+  /* height: 100vh; */
+  min-width: 24rem;
 
   main {
+    min-width: 24rem;
     max-width: 104.8rem;
-    padding: 5.6rem 2.4rem;
-
     display: flex;
     flex: 1;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
 
     h1 {
       display: flex;
+      flex: 1;
       flex-direction: column;
+      justify-content: center;
       align-items: center;
       text-align: center;
+      flex-wrap: wrap;
 
       font-size: 12.8rem;
       line-height: 12.8rem;
       letter-spacing: -1.24rem;
       color: ${props => props.theme.colors.white};
+
+      @media (max-width: ${props => props.theme.breakpoints.mobile.firstWidth}) {
+        font-size: 8.8rem;
+        line-height: 8.8rem;
+        letter-spacing: -0.8rem;
+      }
+
+      @media (max-width: ${props => props.theme.breakpoints.mobile.secondWidth}) {
+        font-size: 5.6rem;
+        line-height: 5.6rem;
+        letter-spacing: -0.6rem;
+      }
 
       span {
         padding: 0.96rem;
@@ -118,7 +125,8 @@ export const Container = styled.div`
     }
 
     h2 {
-      margin: 6.4rem 0;
+      flex-wrap: wrap;
+      margin: 6.4rem 1.2rem;
       font-size: 2rem;
       font-weight: 400;
       letter-spacing: -0.04rem;
@@ -134,7 +142,7 @@ export const Container = styled.div`
     letter-spacing: 0.32rem;
 
     text-align: center;
-    margin-top: 2.8rem;
-    margin-bottom: 4.8rem;
+    margin-top: 6.8rem;
+    margin-bottom: 2.8rem;
  }
 `

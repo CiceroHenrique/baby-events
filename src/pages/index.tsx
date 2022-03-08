@@ -8,7 +8,7 @@ const Home: React.FC = () => {
   return (
     <Container>
       <Head>
-        <title>Celina is coming</title>
+        <title>Chá de fraldas da Celina</title>
       </Head>
 
       <main>

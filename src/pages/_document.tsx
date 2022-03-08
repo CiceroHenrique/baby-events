@@ -42,8 +42,6 @@ export default class MyDocument extends Document {
       <Html lang="pt">
         <Head>
           <meta charSet="utf-8" />
-          {/* https://i.ibb.co/pyZQ02v/babies.png */}
-          {/* https://i.ibb.co/pyZQ02v/babies.png */}
           <link
             // href="https://fonts.googleapis.com/css?family=Roboto:400,500,700"
             // rel="stylesheet"
